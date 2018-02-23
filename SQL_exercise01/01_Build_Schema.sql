@@ -1,4 +1,6 @@
-/*Create a database and write basic scripts*/
+--Create a database
+--Examin database/tables
+--Write very basic scripts
 
 /* Query 1: Create database called college*/
 CREATE DATABASE IF NOT EXISTS college;
