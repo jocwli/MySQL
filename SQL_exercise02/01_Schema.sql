@@ -59,7 +59,7 @@ CREATE TABLE store (
     region_name CHAR(25) NOT NULL,
     PRIMARY KEY (store_id));
 
-/* create table: employee */
+/* create table: Employee */
 CREATE TABLe employee (
     employee_id INT(4) NOT NULL,
     store_id VARCHAR(3) NOT NULL,
