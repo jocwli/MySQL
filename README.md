@@ -1,4 +1,11 @@
-# MySQLTutorial
-Learning MySQL
+# MySQL Tutorial
+A place to review MySQL to create, query, and update database tables.
 
-This is a place to document all the learnings from MySQL courses.
+### Learning objectives:
+- Building schemas, creating and modifying database and tables
+- Creating databases with relational constraints
+- Writing basic sql statements
+- Assess data using varying queries
+- Creating store routines
+
+
