@@ -1,3 +1,5 @@
+--These queries are basic select statements intended to simply retrieve information
+
 / *Query 1: Display the rows from the customer table whose customer ID is not equal to 99999. Show the customer's last, first, and ID.* /
 SELECT last_name, first_name, customer_id
 FROM Customer
