@@ -1,4 +1,5 @@
---Create the database Retailstore
+--Create the database Retailstore 
+-- (This database will not insert values, tables will be used to focus on just crafting the query itself)
 CREATE DATABASE IF NOT EXISTS Retailstore;
 USE Retailstore;
 
