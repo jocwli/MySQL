@@ -95,39 +95,3 @@ INSERT INTO branch_staff (branch_id, staff_id, contact) VALUES(94567, 10008, '51
 INSERT INTO branch_staff (branch_id, staff_id, contact) VALUES(94567, 10007, '510-666-7777 ');
 INSERT INTO branch_staff (branch_id, staff_id, contact) VALUES(95678, 10010, '510-111-6666 ');
 INSERT INTO branch_staff (branch_id, staff_id, contact) VALUES(96789, 10011, '510-222-5555 ');
-
-/*Query 3*/
-SELECT serial_number, model
-FROM computer;
-
-/*Query 4*/
-ALTER TABLE books
-ADD COLUMN date_added DATETIME;
-
-DESC books;
-
-/*Query 5*/
-ALTER TABLE staff
-MODIFY COLUMN lname VARCHAR(30) NOT NULL;
-DESC staff;
-
-/*Query 6*/
-ALTER TABLE staff
-ADD COLUMN salary DECIMAL(7,2);
-
-/*Query 7*/
-SHOW COLUMNS FROM computer_staff;
-
-/*Query 8*/
-ALTER TABLE books
-DROP COLUMN date_added;
-
-/*Query 9 - copy the structure and indexes but not data*/
-CREATE TABLE books_archive
-LIKE books;
-
-SHOW TABLES FROM library;
-
-/*Query 10*/
-DROP TABLE books_archive;
-SHOW TABLES FROM library;
