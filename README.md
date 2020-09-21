@@ -1,5 +1,5 @@
-# MySQL Tutorial
-A place to review MySQL to create, query, and update database tables.
+# MySQL Review:
+Using MySQL to create, query, and update database tables.
 
 ### What this covers:
 - Building schemas, database, tables, loading external data
