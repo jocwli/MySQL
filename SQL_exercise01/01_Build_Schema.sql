@@ -1,5 +1,5 @@
 --Create a database
---Examin database/tables
+--Examine database/tables
 --Write very basic scripts
 
 /* Query 1: Create database called college*/
