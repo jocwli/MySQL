@@ -6,14 +6,12 @@ Using MySQL to create, query, and update database tables.
 - Modifying database and tables
 - Creating databases with relational constraints
 - Writing basic sql statements
-- Assess data using varying queries
 - Creating store routines
 
 ### Repository contains:
 1. Fundamentals mentioned above
 2. Project for creating and querying a fake university database
 3. Project for creating and querying a fake music industry database
-
 
 ### Notes to setup MySQL Command Line Client:
 You can either code directly on MySQL Workbench or MySQL in Command Line. 
