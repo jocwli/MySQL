@@ -1,4 +1,4 @@
-/* UnitedMasters Interview*/
+/*Music Industry database and queries*/
 
 /*Part 1 – Create the Databases */ 
 DROP DATABASE Music;
@@ -110,6 +110,8 @@ VALUES
 ('u1113','sf_456', 'c40000', '5 second', 'salesforce', '5', '13','10'),
 ('u1113','fi_123', 'c40000', '5 second', 'robinhood', '5', '13','15');
 
+
+/*Part 2 – Query Q&A */ 
 select * from artists;
 select * from streams;
 select * from tracks;
