@@ -2,17 +2,23 @@
 Using MySQL to create, query, and update database tables.
 
 ### What this covers:
-- Building schemas, database, tables, loading external data
+- Building schemas, database, tables, loading external data, stored procedures
 - Modifying database and tables
 - Creating databases with relational constraints
 - Writing basic sql statements
 - Assess data using varying queries
 - Creating store routines
 
-You can either code directly on MySQL Workbench or MySQL in Command Line.
+### Repository contains:
+1. Fundamentals mentioned above showcased with fake retail store data
+2. Project for creating and querying a fake university database
+3. Project for creating and querying a fake music industry database
+
 
 ### Notes to setup MySQL Command Line Client:
-MySQL Command Line Client in Mac runs MySQL through the terminal. You can run SQL scripts through command line or write sql scripts to text files.
+You can either code directly on MySQL Workbench or MySQL in Command Line. 
+
+Using the MySQL Command Line Client in Mac runs MySQL through the terminal. You can run SQL scripts through command line or write sql scripts to text files.
 
 1) Open Terminal
 2) Find directory to call for mysql: cd /usr/local/mysql/bin
