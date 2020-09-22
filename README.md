@@ -24,3 +24,8 @@ source /Users/[Your file location]/[Your data file name].SQL
 tee /Users/[Your file location]/[filename you want].TXT
 6) Run SQL scripts
 7) Stop writing to TXT file: Notee
+
+### Repository contains:
+1. Fundamentals mentioned above showcased with fake retail store data
+2. Project for creating and querying a fake university database
+3. Project for creating and querying a fake music industry database
