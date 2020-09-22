@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS artists;
 DROP TABLE IF EXISTS streams;
 DROP TABLE IF EXISTS tracks;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS ads;
  
 CREATE TABLE artists (
 artist_id varchar(5) NOT NULL UNIQUE,
@@ -40,6 +41,18 @@ gender varchar(2) NOT NULL,
 birth_year varchar(4) NOT NULL,
 zipcode varchar(5) NOT NULL,
 PRIMARY KEY (user_id))
+ENGINE=INNODB;
+
+CREATE TABLE ads (
+user_id varchar(5) NOT NULL,
+ad_id varchar(10) NOT NULL,
+campaign_id varchar(6) NOT NULL,
+ad_type varchar(10) NOT NULL,
+ad_company varchar(10) NOT NULL,
+ad_time INT NOT NULL,
+ad_spend INT NOT NULL, 
+impressions INT NOT NULL,
+PRIMARY KEY (ad_id))
 ENGINE=INNODB;
 
 INSERT INTO artists
@@ -83,10 +96,25 @@ VALUES ('u1111', 'M', 1989, 94511),
 ('u1114', 'M', 1990, 94113),
 ('u1115', 'M', 1981, 94333);
 
+INSERT INTO ads
+VALUES 
+('u1111','fb_123', 'c60000', '10 second', 'facebook', '10', '15','4'),
+('u1111','gi_123', 'c50000', '10 second', 'gimlet', '10', '15','30'),
+('u1111','sf_123', 'c40000', '10 second', 'salesforce', '10', '15','4'),
+('u1111','fb_345', 'c60000', '60 second', 'facebook', '60', '25','2'),
+('u1112','gi_456', 'c50000', '10 second', 'gimlet', '10', '15','30'),
+('u1112','gi_345', 'c50000', '30 second', 'gimlet', '30', '18','30'),
+('u1113','sf_345', 'c40000', '5 second', 'salesforce', '5', '13','10'),
+('u1114','mi_123', 'c40000', '5 second', 'calmapp', '5', '13','4'),
+('u1113','hs_123', 'c40000', '5 second', 'headspace', '5', '13','10'),
+('u1113','sf_456', 'c40000', '5 second', 'salesforce', '5', '13','10'),
+('u1113','fi_123', 'c40000', '5 second', 'robinhood', '5', '13','15');
+
 select * from artists;
 select * from streams;
 select * from tracks;
 select * from users;
+select * from ads;
 
 /******************* Questions ***********************/
 /*How many unique users streamed the track "No Limit" in December 2017?*/
@@ -133,4 +161,8 @@ FROM streams
 WHERE monthname(str_to_date(stream_date, '%M %d %Y')) = "January"
 GROUP BY 1;
 
-/*Calcuate the average ads a person saw*/
+/*Calcuate the average ads a person heard*/
+SELECT a.user_id, avg(b.impressions)
+FROM users a
+INNER JOIN ads b ON a.user_id = b.user_id
+GROUP BY 1;
