@@ -2,7 +2,7 @@
 Using MySQL to create, query, and update database tables.
 
 ### What this covers:
-- Building schemas, database, tables, loading external data
+- Building schemas, database, tables, loading external data, stored procedures
 - Modifying database and tables
 - Creating databases with relational constraints
 - Writing basic sql statements
