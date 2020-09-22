@@ -144,7 +144,6 @@ GROUP BY 1
 ORDER BY count(a.stream_id) DESC
 LIMIT 3;
 
-
 /*What is the monthly / daily streams for each artist?*/
 /* STR_TO_DATE: Take a string and returns a date specified by a format mask
 https://www.w3schools.com/sql/func_mysql_str_to_date.asp */
