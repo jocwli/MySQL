@@ -10,7 +10,7 @@ Using MySQL to create, query, and update database tables.
 - Creating store routines
 
 ### Repository contains:
-1. Fundamentals mentioned above showcased with fake retail store data
+1. Fundamentals mentioned above
 2. Project for creating and querying a fake university database
 3. Project for creating and querying a fake music industry database
 
