@@ -1,7 +1,7 @@
 # MySQL Review:
 Using MySQL to create, query, and update database tables.
 
-### What this covers:
+### Fundamentals covered:
 - Building schemas, database, tables, loading external data, stored procedures
 - Modifying database and tables
 - Creating databases with relational constraints
